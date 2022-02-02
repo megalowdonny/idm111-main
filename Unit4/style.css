@@ -1,0 +1,50 @@
+body {
+  background-color: #F1F3F7;
+  color: #1A356A;
+}
+
+header {
+  background-color: #F1F3F7;
+  color: #1A356A;
+  text-align: center;
+}
+
+main {
+
+}
+
+nav {
+  background-color: #1A356A;
+  color: #F1F3F7;
+  font-size: medium;
+  text-align: center;
+}
+
+a:link {
+  color: #F1F3F7;
+}
+
+a:visited {
+  color: #F7E4B6;
+}
+
+#lists {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: medium;
+}
+
+#resources {
+
+}
+
+#pictures {
+
+}
+
+footer {
+  background-color: #1A356A;
+  color: #F1F3F7;
+  font-size: medium;
+  text-align: center;
+}
