@@ -1,12 +1,16 @@
-* {
-  text-align: center;
+html {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 body {
   background-color: #8eff86;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 nav {
@@ -19,6 +23,7 @@ nav {
 h1 {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 a {
@@ -34,13 +39,38 @@ dd {
   margin-bottom: 20px;;
 }
 
-footer {
-  box-sizing: border-box;
-  height: 50px;
+.content {
+  flex: 1 0 auto;
+}
+
+.topSection {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  color: #eeffed;
+  background-color: #2e493b;
+  flex-shrink: 0;
+  border-top: 5px groove white;
+  border-bottom: 5px groove white;
+}
+
+.middleSection {
+  width: 50%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #faffed;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  flex: 1 0 auto;
+}
+
+.bottomSection {
+  flex-shrink: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #2e493b;
@@ -49,17 +79,8 @@ footer {
   border-bottom: 5px groove white;
 }
 
-.bottomNav {
-  bottom: 50px;
-  position: absolute;
-  width: 100%;
-  background-color: #2e493b;
-}
-
-.container {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+.main {
+  text-align: center;
 }
 
 .headerLink {
@@ -67,33 +88,32 @@ footer {
   color: black;
 }
 
+.middleSection a {
+  color: #2e493b;
+}
+
 .imgSource {
   font-size: 11px;
+}
+
+.bottomNav {
+  bottom: 50px;
+  width: 100%;
+  background-color: #2e493b;
+  margin-bottom: 20px;
 }
 
 .storyNavBottom {
   margin-top: 5px;
 }
 
-.topSection {
-  width: 100%;
-  color: #eeffed;
-  background-color: #2e493b;
-}
-
-.middleSection {
-  width: 70%;
+#frontpageImage {
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #faffed;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-.middleSection a {
-  color: #2e493b;
+#olympic {
+  width: 300px;
+  float: left;
+  margin-right: 50px;
 }
