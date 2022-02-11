@@ -42,6 +42,11 @@ a:visited {
 
 }
 
+.company {
+  color: #000000;
+  font-weight: bold;
+}
+
 footer {
   background-color: #1A356A;
   color: #F1F3F7;
