@@ -114,6 +114,19 @@ dd {
 
 #olympic {
   width: 300px;
+  float: right;
+  margin-left: 50px;
+}
+
+#skateboard {
+  width: 300px;
   float: left;
   margin-right: 50px;
+}
+
+#skaters {
+  width: 300px;
+  float: right;
+  margin-left: 50px;
+  margin-top: 80px;
 }
