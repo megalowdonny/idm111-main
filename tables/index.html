@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tables</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      caption {
+        font-size: 18px;
+        text-decoration: underline;
+        margin-bottom: 5px;
+      }
+
+      br {
+        line-height: 5em;
+      }
+
+      td, th {
+        padding: 5px;
+      }
+
+      .column1 {
+        font-weight: bold;
+      }
+
+      .table2 {
+        border: 5px solid black;
+      }
+
+      .table2 td {
+        border: 1px solid black;
+      }
+
+      .table3 .altrow {
+        background-color: lightgrey;
+      }
+
+      .table4 {
+        border: 1px solid black;
+      }
+
+      .table4 td {
+        border: 1px dashed black;
+      }
+
+      .image {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Tables Tables and More Tables!</h1>
+
+    <div class='container'>
+      <table>
+        <caption>Table #1</caption>
+        <tr>
+          <th>Row one, column one</th>
+          <th>Row one, column two</th>
+          <th>Row one, column three</th>
+        </tr>
+        <tr>
+          <td>Row two, column one</td>
+          <td>Row two, column two</td>
+          <td>Row two, column three</td>
+        </tr>
+        <tr>
+          <td>Row three, column one</td>
+          <td>Row three, column two</td>
+          <td>Row three, column three</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table class='table2'>
+        <caption>Table #2</caption>
+        <tr>
+          <td class='column1'>Row one, column one</td>
+          <td>Row one, column two</td>
+          <td>Row one, column three</td>
+        </tr>
+        <tr>
+          <td class='column1'>Row two, column one</td>
+          <td>Row two, column two</td>
+          <td>Row two, column three</td>
+        </tr>
+        <tr>
+          <td class='column1'>Row three, column one</td>
+          <td>Row three, column two</td>
+          <td>Row three, column three</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table class='table3'>
+        <caption>Table #3</caption>
+        <tr class='altrow'>
+          <td>Row one, column one</td>
+          <td>Row one, column two</td>
+          <td>Row one, column three</td>
+        </tr>
+        <tr>
+          <td>Row two, column one</td>
+          <td>Row two, column two</td>
+          <td>Row two, column three</td>
+        </tr>
+        <tr class='altrow'>
+          <td>Row three, column one</td>
+          <td>Row three, column two</td>
+          <td>Row three, column three</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <table class='table4'>
+        <caption>Table #4</caption>
+        <tr>
+          <td>Row one, column one</td>
+          <td>Row one, column two</td>
+          <td>Row one, column three</td>
+        </tr>
+        <tr>
+          <td>Row two, column one</td>
+          <td class='image'>
+            <img src='frog.jpg' width='100px' alt='picture I took of a frog'>
+          </td>
+          <td>Row two, column three</td>
+        </tr>
+        <tr>
+          <td>Row three, column one</td>
+          <td>Row three, column two</td>
+          <td>Row three, column three</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
