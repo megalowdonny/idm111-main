@@ -107,6 +107,39 @@ dd {
   margin-top: 5px;
 }
 
+/* ALL STYLING FOR TABLE IS BELOW THIS LINE */
+
+.brands {
+  border: 3px solid hsl(0, 0%, 0%);
+  border-collapse: collapse;
+}
+
+.brands caption {
+  font-size: 26px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.brands td, th {
+  border: 3px dotted black;
+}
+
+.brands td {
+  padding: 10px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.brands th {
+  padding: 20px;
+}
+
+.brands .altrow {
+  background-color: #befac2;
+}
+
+/* ALL STYLING FOR TABLE IS ABOVE THIS LINE */
+
 #frontpageImage {
   margin-left: auto;
   margin-right: auto;
