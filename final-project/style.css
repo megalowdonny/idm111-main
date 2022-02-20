@@ -48,7 +48,6 @@ dd {
   color: #eeffed;
   background-color: #2e493b;
   flex-shrink: 0;
-  border-top: 5px groove white;
   border-bottom: 5px groove white;
 }
 
