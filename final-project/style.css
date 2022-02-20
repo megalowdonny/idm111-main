@@ -137,28 +137,21 @@ dd {
   background-color: #befac2;
 }
 
+.img-left {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+.img-right {
+  width: 300px;
+  float: right;
+  margin-left: 20px;
+}
+
 /* ALL STYLING FOR TABLE IS ABOVE THIS LINE */
 
 #frontpageImage {
   margin-left: auto;
   margin-right: auto;
-}
-
-#olympic {
-  width: 300px;
-  float: right;
-  margin-left: 50px;
-}
-
-#skateboard {
-  width: 300px;
-  float: left;
-  margin-right: 50px;
-}
-
-#skaters {
-  width: 300px;
-  float: right;
-  margin-left: 50px;
-  margin-top: 80px;
 }
