@@ -1,0 +1,165 @@
+html {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  background-color: #8eff86;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #cbfffb;
+}
+
+dt {
+  font-size: 24px;
+}
+
+dd {
+  margin-bottom: 20px;;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.topSection {
+  width: 100%;
+  color: #eeffed;
+  background-color: #2e493b;
+  flex-shrink: 0;
+  border-top: 5px groove white;
+  border-bottom: 5px groove white;
+}
+
+.middleSection {
+  width: 50%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #faffed;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  flex: 1 0 auto;
+}
+
+.bottomSection {
+  flex-shrink: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e493b;
+  color: #eeffed;
+  border-top: 5px groove white;
+  border-bottom: 5px groove white;
+}
+
+.main {
+  text-align: center;
+}
+
+.headerLink {
+  text-decoration: none;
+  color: black;
+}
+
+.middleSection a {
+  color: #2e493b;
+}
+
+.imgSource {
+  font-size: 11px;
+}
+
+.bottomNav {
+  bottom: 50px;
+  width: 100%;
+  background-color: #2e493b;
+  margin-bottom: 20px;
+}
+
+.storyNavBottom {
+  margin-top: 5px;
+}
+
+/* ALL STYLING FOR TABLE IS BELOW THIS LINE */
+
+.brands {
+  border: 3px solid hsl(0, 0%, 0%);
+  border-collapse: collapse;
+}
+
+.brands caption {
+  font-size: 26px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.brands td, th {
+  border: 3px dotted black;
+}
+
+.brands td {
+  padding: 10px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.brands th {
+  padding: 20px;
+}
+
+.brands .altrow {
+  background-color: #befac2;
+}
+
+/* ALL STYLING FOR TABLE IS ABOVE THIS LINE */
+
+#frontpageImage {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#olympic {
+  width: 300px;
+  float: right;
+  margin-left: 50px;
+}
+
+#skateboard {
+  width: 300px;
+  float: left;
+  margin-right: 50px;
+}
+
+#skaters {
+  width: 300px;
+  float: right;
+  margin-left: 50px;
+  margin-top: 80px;
+}
