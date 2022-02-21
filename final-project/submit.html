@@ -2,8 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>The Illegitimacy of Cariuma</title>
+    <title>Decrypting Cryptids</title>
     <link rel='stylesheet' type='text/css' href='style.css'>
+    <style>
+      br {
+        line-height: 2em;
+      }
+    </style>
   </head>
 
   <body>
@@ -21,7 +26,66 @@
         </nav>
       </div>
 
-      <main></main>
+      <main class='middleSection'>
+        <form method='get'>
+          <fieldset>
+            <legend>Your Information</legend>
+            <label for='first' class='question'>First Name: </label><input type='text' name='first' id='first'><p></p>
+            <label for='last' class='question'>Last Name: </label><input type='text' name='last' id='last'><p></p>
+            <label for='email' class='question'>Email: </label><input type='email' name='email' id='email'><p></p>
+            <label for='phone' class='question'>Phone Number: </label><input type='tel' name='phone' id='phone'><p></p>
+          </fieldset>
+          
+          <br>
+
+          <fieldset>
+            <legend>About Your Sighting</legend>
+            <p class='question'>What type of creature did you see?</p>
+            <form method='get'>
+              <select size='1'>
+                <option>Please select the broad type</option>
+                <option value='humanoid'>Humanoid</option>
+                <option value='dragon'>Dragon/Reptile</option>
+                <option value='beast'>Beast/Mammal</option>
+                <option value='et'>Extraterrestrial</option>
+                <option value='artificial'>Artificial Life Form</option>
+                <option value='ethereal'>Ethereal</option>
+                <option value='human'>Anomalous Human</option>
+                <option value='plant'>Plant</option>
+              </select>
+            </form>
+
+            <br>
+
+            <p class='question'>Where did this sighting take place?</p>
+            <form method='get'>
+              <input type='radio' name='placeNationalPark' id='nationalPark' value='nationalPark'>National park<br>
+              <input type='radio' name='placecityLimits' id='cityLimits' value='cityLimits'>Within city limits<br>
+              <input type='radio' name='placePrivate' id='private' value='private'>Private residence<br>
+              <input type='radio' name='placePublic' id='publicLand' value='publicLand'>Public land<br>
+            </form>
+
+            <p class='question'>What type of evidence did you collect?</p>
+            <form method='get'>
+              <input type='checkbox' name='eyewitness' id='eyewitness' value='yes'>Eyewitness testimony<br>
+              <input type='checkbox' name='photo' id='photo' value='yes'>Photograph<br>
+              <input type='checkbox' name='video' id='video' value='yes'>Video<br>
+              <input type='checkbox' name='audio' id='audio' value='yes'>Audio recording<br>
+              <input type='checkbox' name='physical' id='physical' value='yes'>Physical evidence<br>
+            </form>
+
+            <br>
+
+            
+          <label class='question'>Describe your sighting:</label><br>
+          <textarea name='description' cols='50' rows='10'></textarea>
+          </fieldset>
+
+          <br>
+
+          <input type='submit' value='Submit my sighting' class='button'> &nbsp; <input type='reset' class='button'>
+        </form>
+      </main>
     </div>
 
     <div class='bottomSection'>
