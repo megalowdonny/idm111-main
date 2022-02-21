@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <style>
+      fieldset {
+        width: 350px;
+        border: 2px double red;
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+
+      legend {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+      }
+
+      label {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Get Our Newsletter!</h1>
+    <form method='get'>
+      <label for='email'>Email: </label> <input type='email' name='email' id='email'>
+      <br>
+      <br>
+      <input type='submit' value='Send me the newsletter!'> &nbsp; <input type='reset'>
+    </form>
+
+    <br>
+
+    <h1>Sample Check Box Form</h1>
+    <p>What do you like on your pizza?</p>
+    <form method='get'>
+      <input type='checkbox' name='cheese' id='cheese' value='yes'>Cheese<br>
+      <input type='checkbox' name='pepperoni' id='pepperoni' value='yes'>Pepperoni<br>
+      <input type='checkbox' name='mushrooms' id='mushrooms' value='yes'>Mushrooms<br>
+      <input type='checkbox' name='peppers' id='peppers' value='yes'>Peppers<br>
+      <input type='checkbox' name='sausage' id='sausage' value='yes'>Sausage<br>
+      <input type='submit' value='Make my pizza!'> &nbsp; <input type='reset'>
+    </form>
+
+    <br>
+
+    <h1>Sample Radio Button Form</h1>
+    <p>What is your favorite color?</p>
+    <form method='get'>
+      <input type='radio' name='favecolor' id='favered' value='red'>Red<br>
+      <input type='radio' name='favecolor' id='faveblue' value='blue'>Blue<br>
+      <input type='radio' name='favecolor' id='favegreen' value='green'>Green<br>
+      <input type='radio' name='favecolor' id='faveyellow' value='yellow'>Yellow<br>
+      <input type='radio' name='favecolor' id='favepurple' value='purple'>Purple<br>
+      <input type='submit' value='Make my pizza!'> &nbsp; <input type='reset'>
+    </form>
+
+    <br>
+
+    <h1>Password Box</h1>
+    <form method='get'>
+      <label for='username'>Username: </label><input type='text' name='username' id='username'>
+      <label for='pword'>Password: </label><input type='password' name='pword' id='pword'>
+    </form>
+
+    <br>
+
+    <h1>Select Form</h1>
+    <p>What is your favorite color?</p>
+    <form method='get'>
+      <select size='1' name='favecolor' id='favecolor'>
+        <option>Select your favorite color</option>
+        <option value='red'>Red</option>
+        <option value='blue'>Blue</option>
+        <option value='green'>Green</option>
+        <option value='yellow'>Yellow</option>
+        <option value='purple'>Purple</option>
+      </select>
+    </form>
+
+    <br>
+
+    <h1>Select List with HTML</h1>
+    <form method='get'>
+      <select size='5' name='menu' id='menu'>
+        <option value='index.html'>Home</option>
+        <option value='about.html'>About Us</option>
+        <option value='contact.html'>Contact Us</option>
+        <option value='credits.html'>Credits</option>
+        <option value='history.html'>Our History</option>
+        <option value='shop.html'>Shop With Us</option>
+      </select>
+    </form>
+
+    <br>
+
+    <h1>Fieldset and Text Area</h1>
+    <form method='get'>
+      <fieldset>
+        <legend>Customer Information</legend>
+        <label>First Name: <input type='text' name='first' id='first'></label><p>
+        <label>Last Name: <input type='text' name='last' id='last'></label><p>
+        <label>Street: <input type='text' name='street' id='street'></label><p></p>
+        <label>City: <input type='text' name='city' id='city'></label><p></p>
+        <label>State: <input type='text' name='state' id='state'></label><p></p>
+        <label>Zip: <input type='text' name='zip' id='zip'></label><p></p>
+        <label for='phone'>Phone: </label><input type='tel' name='phone' id='phone'><p></p>
+      </fieldset>
+
+      <b><i>Comments:</i></b><br>
+      <textarea name='comments' id='comments' cols='50' rows='10'></textarea>
+    </form>
+  </body>
+</html>
