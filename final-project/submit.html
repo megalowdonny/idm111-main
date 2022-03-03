@@ -31,6 +31,7 @@
         <div class='buttonContainer'>
           <button type='button' id='newsletterButton'>Sign Up for Newsletter</button>
           <button type='button' id='sightingButton'>Submit a Sighting</button>
+          <button type='button' id='satisfactionButton'>Rate Our Site</button>
         </div>
 
         <div class='newsletterForm'>
@@ -97,6 +98,16 @@
             <button type='submit' class='button'>Submit my sighting</button> &nbsp; <input type='reset' class='button'>
           </form>
         </div>
+
+        <div class='satisfactionForm'>
+          <form method='get'>
+            <label for='satisfaction'>Please rate your satisfaction with this site on a scale of 1 to 10</label>
+            <input type='range' id='satisfaction' name ='satisfaction' min='1' max='10' value='5'>
+            <span id='satisfactionAmount'></span>
+            <button type='submit' class='button'>Submit</button>
+          </form>
+        </div>
+
       </main>
     </div>
 
@@ -110,9 +121,13 @@
     <script>
       const newsletterButton = document.getElementById('newsletterButton');
       const sightingButton = document.getElementById('sightingButton');
+      const satisfactionButton = document.getElementById('satisfactionButton');
       const buttonContainer = document.querySelector('.buttonContainer');
       const newsletterForm = document.querySelector('.newsletterForm');
       const submissionForm = document.querySelector('.submissionForm');
+      const satisfactionForm = document.querySelector('.satisfactionForm');
+      const satisfaction = document.getElementById('satisfaction');
+      const satisfactionAmount = document.getElementById('satisfactionAmount');
 
       function handleNewsletter() {
         buttonContainer.style.display = 'none';
@@ -121,11 +136,25 @@
 
       function handleSighting() {
         buttonContainer.style.display = 'none';
-        submissionForm.style.display = 'block'
+        submissionForm.style.display = 'block';
       }
+
+      function handleSatisfaction() {
+        buttonContainer.style.display = 'none';
+        satisfactionForm.style.display = 'flex';
+      }
+
+      function handleSatChange(e) {
+        console.log(e);
+        satisfactionAmount.textContent = this.value;
+      }
+
+      satisfactionAmount.textContent = satisfaction.value;
 
       newsletterButton.addEventListener('click', handleNewsletter);
       sightingButton.addEventListener('click', handleSighting);
+      satisfactionButton.addEventListener('click', handleSatisfaction);
+      satisfaction.addEventListener('input', handleSatChange);
     </script>
   </body>
 </html>

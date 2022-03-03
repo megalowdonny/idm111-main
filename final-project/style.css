@@ -194,12 +194,13 @@ legend {
 }
 
 .buttonContainer {
-  margin-top: 60px;
-  height: 200px;
+  margin-top: 40px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  gap: 30px;
 }
 
 .buttonContainer button {
@@ -209,7 +210,7 @@ legend {
 }
 
 .newsletterForm {
-  margin-top: 60px;
+  margin-top: 40px;
   display: none;
 }
 
@@ -227,6 +228,24 @@ legend {
 
 .submissionForm {
   display: none;
+}
+
+.satisfactionForm {
+  margin-top: 40px;
+  display: none;
+}
+
+.satisfactionForm form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#satisfaction {
+  width: 300px;
 }
 
 #frontpageImage p {
