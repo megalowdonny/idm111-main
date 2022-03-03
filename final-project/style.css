@@ -20,13 +20,12 @@ nav {
   gap: 50px;
   text-shadow: 2px 2px black;
 }
+nav a:visited {
+  color: #c3f8de;
+}
 
 nav a:hover {
   color: #42b67c;
-}
-
-nav a:visited {
-  color: #c3f8de;
 }
 
 h1 {
