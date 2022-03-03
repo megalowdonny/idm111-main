@@ -21,6 +21,14 @@ nav {
   text-shadow: 2px 2px black;
 }
 
+nav a:hover {
+  color: #42b67c;
+}
+
+nav a:visited {
+  color: #c3f8de;
+}
+
 h1 {
   margin: 0;
   padding: 0 0 10px 0;
